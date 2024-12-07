@@ -1,0 +1,431 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: white;  /* Changed to white */
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* Optional: Adds a subtle shadow */
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo styling */
+.logo {
+    color: #333;  /* Dark text for the logo */
+    text-decoration: none;
+    font-size: 24px;
+}
+
+/* Search bar styling */
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    padding: 8px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #ccc;  /* Light border */
+    margin-right: 10px;
+}
+
+/* Get Started button styling */
+.get-started-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.get-started-btn:hover {
+    background-color: #45a049;
+}
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main container for the text and search bar */
+.content-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style for the text lines */
+.text-line {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px; /* Space between text lines */
+}
+
+/* Search bar container */
+.search-container {
+    display: flex;
+    justify-content: flex-end; /* Align search bar to the right */
+    margin-top: 20px; /* Add some space before the search bar */
+}
+
+/* Search bar styling */
+.search-bar {
+    padding: 8px 15px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #ddd;  /* Light gray border */
+    background-color: #f5f5f5; /* Light gray background */
+    font-size: 14px;
+    position: relative;
+}
+
+/* Search icon inside the search bar */
+.search-bar::before {
+    content: '\1F50D'; /* Unicode for search icon */
+    font-size: 16px;
+    color: #888;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Makes the icon non-interactive */
+}
+
+/* Add some padding to the search bar to ensure the icon doesn't overlap the text */
+.search-bar {
+    padding-left: 30px;
+}
+
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* Optional shadow */
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #333;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+/* Navbar links styling */
+.navbar-links {
+    display: flex;
+    gap: 20px;  /* Space between links */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 8px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #4CAF50;  /* Change color on hover */
+    transform: scale(1.1);  /* Slight zoom effect */
+}
+
+/* Search bar styling */
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    padding: 8px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #ddd;  /* Light gray border */
+    background-color: #f5f5f5; /* Light gray background */
+    font-size: 14px;
+    padding-left: 30px;  /* Space for search icon */
+}
+
+/* Search icon inside the search bar */
+.search-bar::before {
+    content: '\1F50D'; /* Unicode for search icon */
+    font-size: 16px;
+    color: #888;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Makes the icon non-interactive */
+}
+
+/* Get Started button styling */
+.get-started-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.get-started-btn:hover {
+    background-color: white;
+}
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;  /* Light background */
+}
+
+/* Navbar styling */
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: grey;  /* Grey background for navbar */
+    text-align: center;  /* Center align navbar */
+}
+
+li {
+    display: inline-block;  /* Align items in a row */
+}
+
+li a {
+    display: block;
+    color: black;  /* Black text */
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Button hover effect */
+li a:hover:not(.active) {
+    background-color: #111;  /* Dark background on hover */
+    color: white;  /* Change text color on hover */
+}
+
+/* Active button styling */
+.active {
+    background-color: grey;  /* Gray background for active link */
+    color: white;  /* White text on active button */
+}
+
+/* Responsive button padding for smaller screens */
+@media (max-width: 600px) {
+    li a {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+}
+
+
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .sidebar {
+    width: 25%;
+    padding-right: 20px;
+  }
+  
+  .sidebar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin: 10px 0;
+    font-size: 1rem;
+  }
+  
+  .main-content {
+    width: 75%;
+  }
+  
+  .blog-post {
+    background: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .blog-post .date {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .blog-post h3 {
+    margin: 10px 0;
+    font-size: 1.6rem;
+    color: #222;
+  }
+  
+  .blog-post .description {
+    font-size: 1rem;
+    color: #555;
+    margin: 10px 0 20px;
+  }
+  
+  .blog-post .meta {
+    display: flex;
+    gap: 10px;
+    font-size: 0.9rem;
+    color: #888;
+  }
+  
+  .blog-post .meta .tag {
+    background: #007bff;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+  }
+  
+  .blog-post .meta .author {
+    font-style: italic;
+  }
+  
+  .blog-post .meta .time {
+    font-size: 0.8rem;
+  }
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  .newsletter-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px 40px;
+    max-width: 1200px;
+    margin: 40px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .newsletter-content {
+    max-width: 600px;
+  }
+  
+  .subheading {
+    color: #007bff;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    color: #000;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .newsletter-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .newsletter-form input[type="email"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .newsletter-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .newsletter-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .note {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .newsletter-image {
+    width: 300px;
+    height: 150px;
+    background-color: #007bff;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .newsletter-image::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 250px;
+    height: 250px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+    
+
+
+  
